@@ -3,10 +3,11 @@ $( document ).ready(function() {
 
 
 
-function Upgrade (name,cost,multplier) {
+function Upgrade (name,cost,multplier,gather_rate) {
     this.name = name;
     this.cost = cost;
     this.multplier = multplier;
+    this.gather_rate = gather_rate;
 
 
     this.getInfo = function() {
@@ -19,10 +20,10 @@ function Upgrade (name,cost,multplier) {
 }
 // Array to contain all the games Upgrades
 var upgradeList = [];
-var minerU = new Upgrade("Miner",5,.2); 
+var minerU = new Upgrade("Miner",5,.2,2); 
 // Push each upgrade to array
 upgradeList.push(minerU); 
-var pickaxeU = new Upgrade("Pickaxe",5,.1);
+var pickaxeU = new Upgrade("Pickaxe",5,.1,1);
 upgradeList.push(pickaxeU);
 
 
