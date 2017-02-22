@@ -22,9 +22,8 @@ var main = function () {
 
     setInterval(function() {
         $("input").val(resources)
-    //resources = resources + 1;
-    }, 1000/FPS)
 
+    }, 1000/FPS)
 
 };
 
