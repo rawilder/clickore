@@ -1,0 +1,22 @@
+body {
+
+}
+
+p {
+
+}
+
+.upgradeButton
+{
+    border-radius: 10px;
+    background: darkslategrey;
+    padding: 20px; 
+    width: 100px;
+    height: 75px;
+    color: white; 
+    
+   
+    
+
+}
+

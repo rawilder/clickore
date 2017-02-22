@@ -14,7 +14,7 @@ function Upgrade (name,cost,multplier) {
     };
     // Seeing if this works.
     this.button = function() {
-        return '<button id="buy-' + this.name + '">Buy ' + this.name + ' (' + this.cost + ')' + '</button></br>'; //.format function???
+        return '<button id="buy-' + this.name + '" class = "upgradeButton" >Buy ' + this.name + ' (' + this.cost + ')' + '</button></br>'; //.format function???
     };
 }
 // Array to contain all the games Upgrades
