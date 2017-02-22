@@ -24,7 +24,7 @@ function Upgrade (name,cost,multplier,gather_rateAdd,num_objects) {
          cost = parseInt(this.cost);
          gather_rateAdd = parseInt(this.gather_rateAdd);
          
-         // If stament is working... Gotta fix it
+         // If stament is not working...I Gotta fix it :
          if (resources >= cost) {
             resources -= cost;
             console.log(resources);
