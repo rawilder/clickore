@@ -3,30 +3,34 @@ $( document ).ready(function() {
 
 
 
-function Upgrade (name,cost,multplier,gather_rate,num_objects) {
+function Upgrade (name,cost,multplier,gather_rateAdd,num_objects) {
     this.name = name;
     this.cost = cost;
     this.multplier = multplier;
-    this.gather_rate = gather_rate;
+    this.gather_rateAdd = gather_rateAdd;
     this.num_objects = num_objects;
 
 
     this.getInfo = function() {
-        return this.cost + ' ' + this.type + ' ' + this.multplier + ' ' + this.gather_rate;
+        return this.cost + ' ' + this.type + ' ' + this.multplier + ' ' + this.gather_rateAdd;
     };
 
 
     // Create the .onClick function
     this.clicked = function() {
+         console.log("Yep, you clicked me!");
+         resources = parseInt(Cookies.get('resources'));
+         gather_rate = parseInt(Cookies.get('gather_rate'));
+         cost = parseInt(this.cost);
+         gather_rateAdd = parseInt(this.gather_rateAdd);
          
-         resources = Cookies.get('resources');
-         console.log(resources);
-
-         if (resources >= this.cost) {
-            resources -= this.cost;
-            Cookies.set('resources', resources); 
+         // If stament is working... Gotta fix it
+         if (resources >= cost) {
+            resources -= cost;
+            console.log(resources);
+            Cookies.set('resources', resources);  
             gather_rate = parseInt(Cookies.get('gather_rate'));
-            gather_rate += this.gather_rate;
+            gather_rate += gather_rateAdd;
             Cookies.set('gather_rate', gather_rate);     
         }
     };
