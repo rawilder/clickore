@@ -29,7 +29,7 @@ function Automation (name, cost, multiplier, baseGatherRate) {
     }
 
     this.button = function() {
-        return '<button id="buy-' + this.name + '" class = "automationButton" >Buy ' + this.name + ' (' + this.cost + ')' + '</button></br>'; 
+        return '<button id="buy-' + this.name + '" class="btn btn-info" >Buy ' + this.name + ' (' + this.cost + ')' + '</button></br>'; 
     };
 
     // Create the .onClick function

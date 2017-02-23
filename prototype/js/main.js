@@ -14,7 +14,7 @@ var main = function () {
     setInterval(function() {
         counter += 1;
         var resources = (Cookies.get('resources') ? parseInt(Cookies.get('resources')) : 0);
-        $("input").val(resources)
+        $("#resources").val(resources)
         if (counter == FPS) {
             counter = 0;
             for(var i = 0; i < automationNames.length; i++){

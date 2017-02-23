@@ -35,7 +35,7 @@ function Upgrade (name, cost, multiplierAdd, baseGatherRateAdd, upgradeType) {
     };
 
     this.button = function() {
-        return '<button id="buy-' + this.name + '" class = "upgradeButton" >Buy ' + this.name + ' (' + this.cost + ')' + '</button></br>'; 
+        return '<button id="buy-' + this.name + '" class="btn btn-success" >Buy ' + this.name + ' (' + this.cost + ')' + '</button></br>'; 
     };
 }
 
