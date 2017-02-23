@@ -1,27 +1,31 @@
 var main = function () {
 
-
-    $("input").val("text")
-
     var FPS = 30;
-    var resources = (Cookies.get('resources') ? parseInt(Cookies.get('resources')) : 0);
-    var gather_rate = (Cookies.get('gather_rate') ? parseInt(Cookies.get('gather_rate')) : 1);
+    var automationNames=['Miner']
 
     $('#mine').click(function (){
-        resources += gather_rate;
+        var clicker = new Clicker(Cookies.getJSON('clicker'));
+        var resources = (Cookies.get('resources') ? parseInt(Cookies.get('resources')) : 0);
+        resources += clicker.gatherRate;
         Cookies.set('resources', resources)
     });
 
-    $('#buy-pick').click(function (){
-        if (resources >= 10) {
-            resources -= 10;
-            gather_rate += 1;
-            Cookies.set('gather_rate', gather_rate)
-        }
-    });
-
+    var counter = 0;
     setInterval(function() {
+        counter += 1;
+        var resources = (Cookies.get('resources') ? parseInt(Cookies.get('resources')) : 0);
         $("input").val(resources)
+        if (counter == FPS) {
+            counter = 0;
+            for(var i = 0; i < automationNames.length; i++){
+                automationName = automationNames[i];
+                automation = Cookies.getJSON(automationName);
+                if (automation) {
+                    resources += automation.gatherRate;
+                    Cookies.set('resources', resources)
+                }
+            }
+        }
 
     }, 1000/FPS)
 

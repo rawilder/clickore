@@ -1,8 +1,3 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
-
-
-
 function Upgrade (name, cost, multiplierAdd, baseGatherRateAdd, upgradeType) {
     this.name = name;
     this.cost = cost;
@@ -18,22 +13,24 @@ function Upgrade (name, cost, multiplierAdd, baseGatherRateAdd, upgradeType) {
 
     // Create the .onClick function
     this.clicked = function() {
-         console.log("Yep, you clicked me!");
          resources = parseInt(Cookies.get('resources'));
          cost = parseInt(this.cost);
-         gather_rate = parseInt(Cookies.get('gather_rate'));
-         multiplierAdd = parseInt(Cookies.get('multiplierAdd'));
          baseGatherRateAdd = parseInt(this.baseGatherRateAdd);
-         baseGatherRateAdd = parseInt(this.multiplierAdd);
+         multiplierAdd = parseInt(this.multiplierAdd);
          
          // If stament is not working...I Gotta fix it :
         if (resources >= cost) {
-            toUpgrade = Cookies.getJSON(this.upgradeType)
+            switch(this.upgradeType) {
+                case 'clicker':
+                    var toUpgrade = new Clicker(Cookies.getJSON('clicker'));
+                    break;
+                //case 'automation':
+            }
             resources -= cost;
             console.log(resources);
             Cookies.set('resources', resources);
             toUpgrade.updateBaseGatherRate(baseGatherRateAdd);
-            toUpgrade.updatemultiplier(multiplierAdd);
+            toUpgrade.updateMultiplier(multiplierAdd);
         }
     };
 
@@ -41,24 +38,26 @@ function Upgrade (name, cost, multiplierAdd, baseGatherRateAdd, upgradeType) {
         return '<button id="buy-' + this.name + '" class = "upgradeButton" >Buy ' + this.name + ' (' + this.cost + ')' + '</button></br>'; 
     };
 }
-// Array to contain all the games Upgrades
-var upgradeList = [];
-// Push each upgrade to array 
-var pickaxeU = new Upgrade("Pickaxe",5,0,1,"clicker");
-upgradeList.push(pickaxeU);
 
+$( document ).ready(function() {
+    console.log( "ready!" );
 
+    // Array to contain all the games Upgrades
+    var upgradeList = [];
+    // Push each upgrade to array 
+    var pickaxeU = new Upgrade("Pickaxe", 5, 1, 1,"clicker");
+    upgradeList.push(pickaxeU);
+    
+    for(var i = 0; i < upgradeList.length; i++){
 
-var lengthU = upgradeList.length;
-
-for(var i = 0; i < lengthU; i++){
-
-    upgradeName = upgradeList[i].name;
-    buttonU = upgradeList[i].button();
-    buttonID = "#buy-" + upgradeName;
-    console.log(buttonID);
-    $("#Upgrade-Shop").append(upgradeList[i].button());
-    $('body').on('click', buttonID, upgradeList[i].clicked);
-}
+        upgrade = upgradeList[i];
+        buttonID = "#buy-" + upgrade.name;
+        console.log(buttonID);
+        $("#Upgrade-Shop").append(upgrade.button());
+        $(buttonID).data(upgrade);
+        $(buttonID).click(function () {
+            $(buttonID).data().clicked();
+        });
+    }
 
 });
