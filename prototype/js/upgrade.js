@@ -31,6 +31,8 @@ function Upgrade (name, cost, multiplierAdd, baseGatherRateAdd, upgradeType) {
             Cookies.set('resources', resources);
             toUpgrade.updateBaseGatherRate(baseGatherRateAdd);
             toUpgrade.updateMultiplier(multiplierAdd);
+            buttonID = "#buy-" + this.name;
+            $(buttonID).remove();
         }
     };
 
@@ -56,7 +58,7 @@ $( document ).ready(function() {
         $("#Upgrade-Shop").append(upgrade.button());
         $(buttonID).data(upgrade);
         $(buttonID).click(function () {
-            $(buttonID).data().clicked();
+            $(this).data().clicked();
         });
     }
 

@@ -1,6 +1,7 @@
 function Automation (name, cost, multiplier, baseGatherRate) {
     this.name = name;
     this.cost = cost;
+    this.baseCost = cost;
     this.multiplier = multiplier;
     this.baseGatherRate = baseGatherRate;
     this.number = 0;
@@ -43,6 +44,9 @@ function Automation (name, cost, multiplier, baseGatherRate) {
             console.log(resources);
             Cookies.set('resources', resources);
             this.incrementNumber();
+            this.cost = Math.ceil(this.baseCost * Math.pow(1.15, this.number));
+            buttonID = "#buy-" + this.name;
+            $(buttonID).text('Buy ' + this.name + ' (' + this.cost + ')');
         }
     };
 }
@@ -64,7 +68,7 @@ $( document ).ready(function() {
         $("#Automation-Shop").append(automation.button());
         $(buttonID).data(automation);
         $(buttonID).click(function () {
-            $(buttonID).data().clicked();
+            $(this).data().clicked();
         });
     }
 
