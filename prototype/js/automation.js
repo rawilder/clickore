@@ -5,6 +5,7 @@ function Automation (name, cost, multiplier, baseGatherRate, number) {
     this.multiplier = multiplier;
     this.baseGatherRate = baseGatherRate;
     this.number = number;
+    this.gatherRate = this.baseGatherRate * this.multiplier * this.number;
 
 
     this.getInfo = function() {
