@@ -1,10 +1,10 @@
-function Automation (name, cost, multiplier, baseGatherRate) {
+function Automation (name, cost, multiplier, baseGatherRate, number) {
     this.name = name;
     this.cost = cost;
     this.baseCost = cost;
     this.multiplier = multiplier;
     this.baseGatherRate = baseGatherRate;
-    this.number = 0;
+    this.number = number;
 
 
     this.getInfo = function() {
@@ -27,20 +27,22 @@ function Automation (name, cost, multiplier, baseGatherRate) {
         this.number = parseInt(this.number) + 1;
         this.gatherRate = this.baseGatherRate * this.multiplier * this.number;
         Cookies.set(this.name, this);
+        var countID = "#" + this.name + "-count";
+        $(countID).val(this.number);
     };
 
     this.button = function() {
-        return '<button id="buy-' + this.name + '" class="btn btn-info" >Buy ' + this.name.replace('-', ' ') + ' (' + this.cost + ')' + '</button></br>'; 
+        var button = '<button id="buy-' + this.name + '" class="btn btn-info" >Buy ' + this.name.replace('-', ' ') + ' (' + this.cost + ')' + '</button>';
+        var span = '<span class="input-group-btn">' + button + '</span>';
+        var numberDisplay = '<input id="' + this.name + '-count" type="text" class="form-control" value="' + this.number + '"disabled>';
+        var div = '<div class="input-group">' + span + numberDisplay + '</div>';
+        return div; 
     };
 
-    // Create the .onClick function
     this.clicked = function() {
-         var cost = parseInt(this.cost);
-         
-         // If stament is not working...I Gotta fix it :
+        var cost = parseInt(this.cost);
         if (resources >= cost) {
             resources -= cost;
-            console.log(resources);
             Cookies.set('resources', resources);
             this.incrementNumber();
             this.cost = Math.ceil(this.baseCost * Math.pow(1.15, this.number));
@@ -49,30 +51,3 @@ function Automation (name, cost, multiplier, baseGatherRate) {
         }
     };
 }
-
-$( document ).ready(function() {
-    console.log( "ready!" );
-
-    // Array to contain all the games automations
-    var automationList = [];
-    automationList.push(new Automation("Molerat", 5, 1, 1));
-    automationList.push(new Automation("Miner", 100, 1, 2));
-    automationList.push(new Automation("Autodrill", 1000, 1, 10));
-    automationList.push(new Automation("Dwarf", 5000, 1, 20));
-    automationList.push(new Automation("HAG-1", 100000, 1, 100));
-    automationList.push(new Automation("Space-Laser", 1000000, 1, 1000));
-
-    function callButtonClick() {
-        $(this).data().clicked();
-    }
-    for(var i = 0; i < automationList.length; i++){
-
-        var automation = automationList[i];
-        var buttonID = "#buy-" + automation.name;
-        console.log(buttonID);
-        $("#Automation-Shop").append(automation.button());
-        $(buttonID).data(automation);
-        $(buttonID).click(callButtonClick);
-    }
-
-});

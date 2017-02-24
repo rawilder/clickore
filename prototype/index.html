@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- styles -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- external -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/ext/js.cookie.js"></script>
-    <script src="js/clicker.js" type="text/javascript"></script> 
+    
+    <!-- classes -->
+    <script src="js/clicker.js" type="text/javascript"></script>
+    <script src="js/upgrade.js" type="text/javascript"></script>
+    <script src="js/automation.js" type="text/javascript"></script>
+    
+    <!-- game logic -->
     <script src="js/globals.js" type="text/javascript"></script>
-	<script src="js/upgrade.js" type="text/javascript"></script>
-    <script src="js/automation.js" type="text/javascript"></script> 
 	<script src="js/main.js" type="text/javascript"></script>
+
+    <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -24,7 +33,13 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center">
-                <input id="resources" type="text" disabled> <button id="mine" class="btn btn-primary">Mine</button>  <button id="reset" class="btn btn-warning">Reset</button>
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input id="resources" type="text" class="form-control" disabled>
+                    <span class="input-group-btn">
+                        <button id="mine" class="btn btn-primary">Mine</button>  <button id="reset" class="btn btn-warning">Reset</button>
+                    </span>
+                </div>
             </div>
             <div class="col-md-4"></div>
         </div>
