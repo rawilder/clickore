@@ -1,0 +1,149 @@
+[
+	{
+		"name ": "clickerUpgrade_1",
+		"cost": 13,
+		"multiplierAdd": 1,
+		"baseGatherRateAdd": 1,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_2",
+		"cost": 78,
+		"multiplierAdd": 1,
+		"baseGatherRateAdd": 2,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_3",
+		"cost": 351,
+		"multiplierAdd": 1,
+		"baseGatherRateAdd": 3,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_4",
+		"cost": 1320,
+		"multiplierAdd": 1,
+		"baseGatherRateAdd": 4,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_5",
+		"cost": 3000,
+		"multiplierAdd": 1,
+		"baseGatherRateAdd": 5,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_6",
+		"cost": 6210,
+		"multiplierAdd": 2,
+		"baseGatherRateAdd": 6,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_7",
+		"cost": 11392,
+		"multiplierAdd": 2,
+		"baseGatherRateAdd": 7,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_8",
+		"cost": 19200,
+		"multiplierAdd": 2,
+		"baseGatherRateAdd": 8,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_9",
+		"cost": 31590,
+		"multiplierAdd": 2,
+		"baseGatherRateAdd": 9,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_10",
+		"cost": 50250,
+		"multiplierAdd": 2,
+		"baseGatherRateAdd": 10,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_11",
+		"cost": 77137,
+		"multiplierAdd": 3,
+		"baseGatherRateAdd": 11,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_12",
+		"cost": 117720,
+		"multiplierAdd": 3,
+		"baseGatherRateAdd": 12,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_13",
+		"cost": 177450,
+		"multiplierAdd": 3,
+		"baseGatherRateAdd": 13,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_14",
+		"cost": 264600,
+		"multiplierAdd": 3,
+		"baseGatherRateAdd": 14,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_15",
+		"cost": 391500,
+		"multiplierAdd": 3,
+		"baseGatherRateAdd": 15,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_16",
+		"cost": 576000,
+		"multiplierAdd": 3,
+		"baseGatherRateAdd": 16,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_17",
+		"cost": 845325,
+		"multiplierAdd": 3,
+		"baseGatherRateAdd": 17,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_18",
+		"cost": 1215000,
+		"multiplierAdd": 4,
+		"baseGatherRateAdd": 18,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_19",
+		"cost": 1732800,
+		"multiplierAdd": 4,
+		"baseGatherRateAdd": 19,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_20",
+		"cost": 2460000,
+		"multiplierAdd": 4,
+		"baseGatherRateAdd": 20,
+		"upgradeType": "clicker"
+	},
+	{
+		"name ": "clickerUpgrade_21",
+		"cost": 3505950,
+		"multiplierAdd": 7,
+		"baseGatherRateAdd": 21,
+		"upgradeType": "clicker"
+	}
+]
