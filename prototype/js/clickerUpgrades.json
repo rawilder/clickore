@@ -1,146 +1,167 @@
 [
 	{
-		"name ": "clickerUpgrade_1",
+		"Id": "CU_01",
+		"name ": "Brittle Pickaxe",
 		"cost": 13,
 		"multiplierAdd": 1,
 		"baseGatherRateAdd": 1,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_2",
+		"Id": "CU_02",
+		"name ": "Steroids",
 		"cost": 78,
 		"multiplierAdd": 1,
 		"baseGatherRateAdd": 2,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_3",
+		"Id": "CU_03",
+		"name ": "Steel Pickaxe",
 		"cost": 351,
 		"multiplierAdd": 1,
 		"baseGatherRateAdd": 3,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_4",
+		"Id": "CU_04",
+		"name ": "Drill",
 		"cost": 1320,
 		"multiplierAdd": 1,
 		"baseGatherRateAdd": 4,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_5",
+		"Id": "CU_05",
+		"name ": "Diamond Drillbit",
 		"cost": 3000,
 		"multiplierAdd": 1,
 		"baseGatherRateAdd": 5,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_6",
+		"Id": "CU_06",
+		"name ": "Jack Hammer",
 		"cost": 6210,
 		"multiplierAdd": 2,
 		"baseGatherRateAdd": 6,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_7",
+		"Id": "CU_07",
+		"name ": "Latern",
 		"cost": 11392,
 		"multiplierAdd": 2,
 		"baseGatherRateAdd": 7,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_8",
+		"Id": "CU_08",
+		"name ": "Mining Cart",
 		"cost": 19200,
 		"multiplierAdd": 2,
 		"baseGatherRateAdd": 8,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_9",
+		"Id": "CU_09",
+		"name ": "TNT",
 		"cost": 31590,
 		"multiplierAdd": 2,
 		"baseGatherRateAdd": 9,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_10",
+		"Id": "CU_10",
+		"name ": "Ore Vacuum",
 		"cost": 50250,
 		"multiplierAdd": 2,
 		"baseGatherRateAdd": 10,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_11",
+		"Id": "CU_11",
+		"name ": "Laser Pickaxe",
 		"cost": 77137,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 11,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_12",
+		"Id": "CU_12",
+		"name ": "Cybernetic Arm",
 		"cost": 117720,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 12,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_13",
+		"Id": "CU_13",
+		"name ": "Arm Tune-Up",
 		"cost": 177450,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 13,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_14",
+		"Id": "CU_14",
+		"name ": "Cybernetic Overhaul",
 		"cost": 264600,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 14,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_15",
+		"Id": "CU_15",
+		"name ": "Miner Update 1.0 ",
 		"cost": 391500,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 15,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_16",
+		"Id": "CU_16",
+		"name ": "Miner Update 2.0 ",
 		"cost": 576000,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 16,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_17",
+		"Id": "CU_17",
+		"name ": "Miner Update 3.0 ",
 		"cost": 845325,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 17,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_18",
+		"Id": "CU_18",
+		"name ": "Clone",
 		"cost": 1215000,
 		"multiplierAdd": 4,
 		"baseGatherRateAdd": 18,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_19",
+		"Id": "CU_19",
+		"name ": "Highpowered Laser Multitool",
 		"cost": 1732800,
 		"multiplierAdd": 4,
 		"baseGatherRateAdd": 19,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_20",
+		"Id": "CU_20",
+		"name ": "Universe Ore Finder",
 		"cost": 2460000,
 		"multiplierAdd": 4,
 		"baseGatherRateAdd": 20,
 		"upgradeType": "clicker"
 	},
 	{
-		"name ": "clickerUpgrade_21",
+		"Id": "CU_21",
+		"name ": "Nicky Gaines",
 		"cost": 3505950,
 		"multiplierAdd": 7,
 		"baseGatherRateAdd": 21,

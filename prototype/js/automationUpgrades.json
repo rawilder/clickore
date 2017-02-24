@@ -1,0 +1,58 @@
+[
+	{
+		"Id": "AU_01",
+		"name ": "Molerat",
+		"cost": 5,
+		"multiplier": 1,
+		"baseGatherRate": 1,
+		"number": 0
+	},
+	{
+		"Id": "AU_02",
+		"name ": "Friendly Miner",
+		"cost": 100,
+		"multiplier": 1,
+		"baseGatherRate": 2,
+		"number": 0
+	},
+	{
+		"Id": "AU_03",
+		"name ": "Autodrill",
+		"cost": 1000,
+		"multiplier": 1,
+		"baseGatherRate": 10,
+		"number": 0
+	},
+	{
+		"Id": "AU_04",
+		"name ": "Space Dwarf",
+		"cost": 5000,
+		"multiplier": 1,
+		"baseGatherRate": 20,
+		"number": 0
+	},
+	{
+		"Id": "AU_05",
+		"name ": "HAG-1",
+		"cost": 100000,
+		"multiplier": 1,
+		"baseGatherRate": 100,
+		"number": 0
+	},
+	{
+		"Id": "AU_06",
+		"name ": "Space-Laser",
+		"cost": 100000000,
+		"multiplier": 1,
+		"baseGatherRate": 1000,
+		"number": 0
+	},
+	{
+		"Id": "AU_07",
+		"name ": "Nicky Gaines",
+		"cost": 100006000,
+		"multiplier": 1,
+		"baseGatherRate": 2000,
+		"number": 0
+	}
+]

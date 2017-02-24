@@ -2,29 +2,44 @@
 var clicker = new Clicker(Cookies.getJSON('clicker'));
 var resources = (Cookies.get('resources') ? parseInt(Cookies.get('resources')) : 0);
 
-// prep upgrades
-var upgradeList = {
-    "Pickaxe" : new Upgrade("Pickaxe", 10, 0, 1, "clicker"),
-    "Another-Pickaxe" : new Upgrade("Another-Pickaxe", 80, 0, 2, "clicker"),
-    "Handheld-Drill" : new Upgrade("Handheld-Drill", 350, 0, 3, "clicker"),
-    "Diamond-Drillbit" : new Upgrade("Diamond-Drillbit", 1300, 0, 4, "clicker"),
-    "Strength-Training" : new Upgrade("Strength-Training", 3000, 1, 5, "clicker"),
-    "Steroids" : new Upgrade("Steroids", 6200, 0, 6, "clicker")
-};
+
+
+// retrieve Clicker Upgrades
+var upgradeList = [];
+
+$.getJSON( "js/clickerUpgrades.json", function( data ) {
+  var items = [];
+  $.each( data, function(i,item ) {
+      console.log(data[i].name);
+      upgradeName = data[i].id;
+      var upgradeName = new Upgrade(data[i].name, data[i].cost, data[i].muliplierAdd, data[i].baseGatherRateAdd, data[i].upgradeType); 
+      upgradeList.push(upgradeName);
+      console.log(data[i].name + ': Has been added.');
+  });
+ 
+});
+
+
 var usedUpgrades = Cookies.getJSON('usedUpgrades') ? Cookies.getJSON('usedUpgrades') : [];
 for (var i = 0; i < usedUpgrades.length; i++) {
     delete(upgradeList[usedUpgrades[i]]);
 }
 
-// prep automations
-var automationList = {
-    "Molerat" : new Automation("Molerat", 5, 1, 1, 0),
-    "Miner" : new Automation("Miner", 100, 1, 2, 0),
-    "Autodrill" : new Automation("Autodrill", 1000, 1, 10, 0),
-    "Dwarf" : new Automation("Dwarf", 5000, 1, 20, 0),
-    "HAG-1" : new Automation("HAG-1", 100000, 1, 100, 0),
-    "Space-Laser" : new Automation("Space-Laser", 1000000, 1, 1000, 0)
-};
+// Retrieve Automation Upgrades
+var automationList = [];
+
+$.getJSON( "js/automationUpgrades.json", function( data ) {
+  var items = [];
+  $.each( data, function(i,item ) {
+      console.log(data[i].name);
+      upgradeName = data[i].id;
+      var upgradeName = new Upgrade(data[i].name, data[i].cost, data[i].muliplier, data[i].baseGatherRate, data[i].number); 
+      automationList.push(upgradeName);
+      console.log(data[i].name + ': Has been added.');
+  });
+ 
+});
+
 
 for(var automationName in automationList){
     automation = Cookies.getJSON(automationName);
