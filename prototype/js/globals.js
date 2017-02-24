@@ -10,9 +10,8 @@ var upgradeList = [];
 $.getJSON( "js/clickerUpgrades.json", function( data ) {
   var items = [];
   $.each( data, function(i,item ) {
-      console.log(data[i].name);
       upgradeName = data[i].id;
-      var upgradeName = new Upgrade(data[i].name, data[i].cost, data[i].muliplierAdd, data[i].baseGatherRateAdd, data[i].upgradeType); 
+      var upgradeName = new Upgrade(data[i].name, data[i].cost, data[i].multiplierAdd, data[i].baseGatherRateAdd, data[i].upgradeType); 
       upgradeList.push(upgradeName);
       console.log(data[i].name + ': Has been added.');
   });
@@ -31,9 +30,8 @@ var automationList = [];
 $.getJSON( "js/automationUpgrades.json", function( data ) {
   var items = [];
   $.each( data, function(i,item ) {
-      console.log(data[i].name);
       upgradeName = data[i].id;
-      var upgradeName = new Upgrade(data[i].name, data[i].cost, data[i].muliplier, data[i].baseGatherRate, data[i].number); 
+      var upgradeName = new Automation(data[i].name, data[i].cost, data[i].multiplier, data[i].baseGatherRate, data[i].number); 
       automationList.push(upgradeName);
       console.log(data[i].name + ': Has been added.');
   });
