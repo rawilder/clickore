@@ -82,6 +82,8 @@ var main = function () {
     //     Cookies.set('resources', resources);
     // });
 
+    var resourcesPerSecond = 0;
+    
     $('#mine').click(function (){
         resources += clicker.gatherRate;
         Cookies.set('resources', resources);
@@ -98,12 +100,19 @@ var main = function () {
         resources = 0;
         location.reload();
     });
-
+    
     var counter = 0;
     interval(function() {
         counter += 1;
-        
+        resourcesPerSecond = 0;
+        for(var automationName1 in automationList){
+            automation = Cookies.getJSON(automationName1);
+            if (automation) {
+                resourcesPerSecond += automation.gatherRate;
+            }
+        }
         $("#resources").val(resources);
+        $('#resources-per-second').text(resourcesPerSecond + '/s');
         if (counter >= FPS && autoMine) {
             counter = 0;
             for(var automationName in automationList){

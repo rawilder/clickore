@@ -32,8 +32,8 @@ for(var automationName in automationList){
         automationList[automationName] = new Automation(
             automation.name, 
             automation.baseCost,
-            automationList.muliplier,
-            automationList.baseGatherRate,
+            automation.multiplier,
+            automation.baseGatherRate,
             automation.number
         );
     }
