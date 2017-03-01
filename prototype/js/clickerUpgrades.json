@@ -1,7 +1,7 @@
 [
 	{
 		"Id": "CU_01",
-		"name": "Brittle Pickaxe",
+		"name": "Brittle-Pickaxe",
 		"cost": 13,
 		"multiplierAdd": 1,
 		"baseGatherRateAdd": 1,
@@ -17,7 +17,7 @@
 	},
 	{
 		"Id": "CU_03",
-		"name": "Steel Pickaxe",
+		"name": "Steel-Pickaxe",
 		"cost": 351,
 		"multiplierAdd": 1,
 		"baseGatherRateAdd": 3,
@@ -33,7 +33,7 @@
 	},
 	{
 		"Id": "CU_05",
-		"name": "Diamond Drillbit",
+		"name": "Diamond-Drillbit",
 		"cost": 3000,
 		"multiplierAdd": 1,
 		"baseGatherRateAdd": 5,
@@ -41,7 +41,7 @@
 	},
 	{
 		"Id": "CU_06",
-		"name": "Jack Hammer",
+		"name": "Jack-Hammer",
 		"cost": 6210,
 		"multiplierAdd": 2,
 		"baseGatherRateAdd": 6,
@@ -57,7 +57,7 @@
 	},
 	{
 		"Id": "CU_08",
-		"name": "Mining Cart",
+		"name": "Mining-Cart",
 		"cost": 19200,
 		"multiplierAdd": 2,
 		"baseGatherRateAdd": 8,
@@ -73,7 +73,7 @@
 	},
 	{
 		"Id": "CU_10",
-		"name": "Ore Vacuum",
+		"name": "Ore-Vacuum",
 		"cost": 50250,
 		"multiplierAdd": 2,
 		"baseGatherRateAdd": 10,
@@ -81,7 +81,7 @@
 	},
 	{
 		"Id": "CU_11",
-		"name": "Laser Pickaxe",
+		"name": "Laser-Pickaxe",
 		"cost": 77137,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 11,
@@ -89,7 +89,7 @@
 	},
 	{
 		"Id": "CU_12",
-		"name": "Cybernetic Arm",
+		"name": "Cybernetic-Arm",
 		"cost": 117720,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 12,
@@ -97,7 +97,7 @@
 	},
 	{
 		"Id": "CU_13",
-		"name": "Arm Tune-Up",
+		"name": "Arm-Tune-Up",
 		"cost": 177450,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 13,
@@ -105,7 +105,7 @@
 	},
 	{
 		"Id": "CU_14",
-		"name": "Cybernetic Overhaul",
+		"name": "Cybernetic-Overhaul",
 		"cost": 264600,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 14,
@@ -113,7 +113,7 @@
 	},
 	{
 		"Id": "CU_15",
-		"name": "Miner Update 1.0 - Miner xp",
+		"name": "Miner Update-1.0-Miner xp",
 		"cost": 391500,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 15,
@@ -121,7 +121,7 @@
 	},
 	{
 		"Id": "CU_16",
-		"name": "Miner Update 2.0 - iMine",
+		"name": "Miner Update-2.0---iMine",
 		"cost": 576000,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 16,
@@ -129,7 +129,7 @@
 	},
 	{
 		"Id": "CU_17",
-		"name": "Miner Update 3.0 - Finux",
+		"name": "Miner Update-3.0---Finux",
 		"cost": 845325,
 		"multiplierAdd": 3,
 		"baseGatherRateAdd": 17,
@@ -145,7 +145,7 @@
 	},
 	{
 		"Id": "CU_19",
-		"name": "Highpowered Laser Multitool",
+		"name": "Highpowered-Laser-Multitool",
 		"cost": 1732800,
 		"multiplierAdd": 4,
 		"baseGatherRateAdd": 19,
@@ -153,7 +153,7 @@
 	},
 	{
 		"Id": "CU_20",
-		"name": "Universe Ore Finder",
+		"name": "Universe-Ore-Finder",
 		"cost": 2460000,
 		"multiplierAdd": 4,
 		"baseGatherRateAdd": 20,
@@ -161,7 +161,7 @@
 	},
 	{
 		"Id": "CU_21",
-		"name": "Nicky Gaines",
+		"name": "Nicky-Gaines",
 		"cost": 3505950,
 		"multiplierAdd": 7,
 		"baseGatherRateAdd": 21,

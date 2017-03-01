@@ -9,7 +9,7 @@
 	},
 	{
 		"Id": "AU_02",
-		"name": "Friendly Miner",
+		"name": "Friendly-Miner",
 		"cost": 100,
 		"multiplier": 1,
 		"baseGatherRate": 2,
@@ -25,7 +25,7 @@
 	},
 	{
 		"Id": "AU_04",
-		"name": "Space Dwarf",
+		"name": "Space-Dwarf",
 		"cost": 5000,
 		"multiplier": 1,
 		"baseGatherRate": 20,
@@ -49,7 +49,7 @@
 	},
 	{
 		"Id": "AU_07",
-		"name": "Nicky Gaines",
+		"name": "Nicky-Gaines",
 		"cost": 100006000,
 		"multiplier": 1,
 		"baseGatherRate": 2000,
