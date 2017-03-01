@@ -20,8 +20,6 @@ $.getJSON( "js/clickerUpgrades.json", function( data ) {
 });
 
 
->>>>>>> refs/remotes/origin/Upgrade_JSON_ITERATOR
-
 var usedUpgrades = Cookies.getJSON('usedUpgrades') ? Cookies.getJSON('usedUpgrades') : [];
 for (var i = 0; i < usedUpgrades.length; i++) {
     delete(upgradeList[usedUpgrades[i]]);
