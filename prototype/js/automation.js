@@ -33,7 +33,7 @@ function Automation (name, cost, multiplier, baseGatherRate, number) {
     };
 
     this.button = function() {
-        var button = '<button id="buy-' + this.name + '" class="btn btn-info" >Buy ' + this.name.replace('-', ' ') + ' (' + this.cost + ')' + '</button>';
+        var button = '<button id="buy-' + this.name + '" class="btn btn-info" >Buy ' + this.name.replace(/\-/g, ' ') + ' (' + this.cost + ')' + '</button>';
         var span = '<span class="input-group-btn">' + button + '</span>';
         var numberDisplay = '<input id="' + this.name + '-count" type="text" class="form-control" value="' + this.number + '"disabled>';
         var div = '<div class="input-group">' + span + numberDisplay + '</div>';
@@ -46,6 +46,7 @@ function Automation (name, cost, multiplier, baseGatherRate, number) {
             resources -= cost;
             Cookies.set('resources', resources);
             this.incrementNumber();
+            automationList[this.name].number = this.number;
             this.cost = Math.ceil(this.baseCost * Math.pow(1.15, this.number));
             var buttonID = "#buy-" + this.name;
             $(buttonID).text('Buy ' + this.name + ' (' + this.cost + ')');
