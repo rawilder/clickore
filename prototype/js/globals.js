@@ -10,7 +10,7 @@ $.getJSON( "js/clickerUpgrades.json", function( data ) {
   $.each( data, function(i,item ) {
       upgradeName = data[i].id;
       var upgradeName = new Upgrade(data[i].name, data[i].cost, data[i].multiplierAdd, data[i].baseGatherRateAdd, data[i].upgradeType,null); 
-      upgradeList.push(upgradeName);
+      upgradeList[data[i].name] = upgradeName;
       console.log(data[i].name + ': Has been added.');
   });
  
@@ -61,8 +61,6 @@ $(document).ready(function () {
     function callAutomationClick() {
         var automationName = $(this).attr('id').replace('buy-', ''); 
         var automation = automationList[automationName];
-        console.log(automation);
-        
         automation.clicked();
     }
 
